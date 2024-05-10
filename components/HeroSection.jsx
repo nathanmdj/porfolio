@@ -1,12 +1,13 @@
 'use client';
 import Image from 'next/image'
+import Link from 'next/link';
 import React from 'react'
 import { TypeAnimation } from 'react-type-animation'
 
 const HeroSection = () => {
   return (
     <section>
-      <div className="grid grid-cols-1 lg:grid-cols-12 py-16">
+      <div className="grid grid-cols-1 lg:grid-cols-12 pt-20">
         <div className="col-span-7 place-self-center text-center sm:text-left">
           <h1 className='text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold'>
             <span className='text-transparent bg-clip-text bg-gradient-to-r from-green-700 to-green-400'>Hello, I'm </span>
@@ -29,8 +30,12 @@ const HeroSection = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia voluptatem numquam error quasi ipsa inventore consequatur ducimus necessitatibus officia voluptate!
           </p>
           <div className='mb-3'>
-            <button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 hover:bg-slate-800 text-white bg-gradient-to-br from-green-900 via-green-700 to-green-500'>Hire Me</button>
-            <button className='px-6 py-3 w-full sm:w-fit rounded-full bg-transparent hover:bg-slate-800 text-white border-green-500 border mt-3'>Download CV</button>
+            <Link href={'#contact'}>
+              <button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 hover:bg-slate-800 text-white bg-gradient-to-br from-green-900 via-green-700 to-green-500'>Hire Me</button>
+            </Link>
+            <a href={'/avatar.png'} download>            
+              <button className='px-6 py-3 w-full sm:w-fit rounded-full bg-transparent hover:bg-slate-800 text-white border-green-500 border mt-3'>Download CV</button>              
+            </a>
           </div>
         </div>
         <div className="col-span-5 place-self-center mt-4">
