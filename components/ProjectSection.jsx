@@ -47,7 +47,7 @@ const ProjectSection = () => {
       imgUrl: './portfolio.png',
       title: 'Portfolio',
       description: 'Portfolio Website',
-      previewUrl: 'https://kgcomputers.netlify.app/',
+      previewUrl: 'https://portfolio-seven-zeta-32.vercel.app/',
       githubUrl: 'https://github.com/nathanmdj/portfolio',
       stack: ['React','Next.JS', 'Tailwind', 'shadcn/ui', 'Nodemailer', 'Framer Motion']
     },
