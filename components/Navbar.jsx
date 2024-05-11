@@ -22,6 +22,7 @@ const Navbar = () => {
       path: '#contact',
     },
   ]
+
   return (
     <nav className={`fixed top-0 left-0 right-0 z-10 bg-[#121212] border-b border-opacity-80 border-gray-500 ${navbarOpen ? '' : 'bg-opacity-90'}`}>
       <div className='flex flex-wrap items-center justify-between py-4 mx-auto px-4 md:mx-[5vw] 2xl:mx-[8vw]'>
@@ -47,7 +48,7 @@ const Navbar = () => {
           <ul className='flex gap-5'>
             {
               navLinks.map((link, i) => (
-                <li key={i}>
+                <li key={i} >
                   <NavLink href={link.path} title={link.title}/>
                 </li>
               ))

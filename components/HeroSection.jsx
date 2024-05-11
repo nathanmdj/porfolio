@@ -27,13 +27,13 @@ const HeroSection = () => {
             />
           </h1>
           <p className='text-[#adb7be] text-lg mb-6 lg:text-xl'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia voluptatem numquam error quasi ipsa inventore consequatur ducimus necessitatibus officia voluptate!
+           with a strong foundation in programming and problem-solving. I bring a passion for crafting efficient and innovative solutions to every project I undertake.
           </p>
           <div className='mb-3'>
             <Link href={'#contact'}>
               <button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 hover:bg-slate-800 text-white bg-gradient-to-br from-green-900 via-green-700 to-green-500'>Hire Me</button>
             </Link>
-            <a href={'/avatar.png'} download>            
+            <a href={'/CV.pdf'} download>            
               <button className='px-6 py-3 w-full sm:w-fit rounded-full bg-transparent hover:bg-slate-800 text-white border-green-500 border mt-3'>Download CV</button>              
             </a>
           </div>
