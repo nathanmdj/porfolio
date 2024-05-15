@@ -76,7 +76,7 @@ const EmailSection = () => {
         <div>
           <h5 className='text-xl font-bold text-white my-2'>Let's Connect</h5>
           <p className='text-[#ADB7BE] mb-4 max-w-md'>
-            I'm always open to new opportunities, collaborations, and exciting projects. Whether you have a project in mind, want to discuss potential partnerships, or simply want to say hello, feel free to reach out using the contact form  or via email at <a href='mailto:nathanmdj.dev@gmail.com'><span className='underline hover:text-green-500'>nathanmdj.dev@gmail.com</span></a>. I look forward to hearing from you and exploring how we can work together to bring your ideas to life and create impactful digital solutions.
+            I'm always open to new opportunities, collaborations, and exciting projects. Whether you have a project in mind, want to discuss potential partnerships, or simply want to say hello, feel free to reach out using the contact form  or via email at <a href='mailto:nathanmdj.dev@gmail.com'><span className='text-orange-500'>nathanmdj.dev@gmail.com</span></a>. I look forward to hearing from you and exploring how we can work together to bring your ideas to life and create impactful digital solutions.
           </p>
           <div className="socials flex flex-row gap-2">
             <Link href={'https://github.com/nathanmdj'} target='_blank'>          
