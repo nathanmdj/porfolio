@@ -18,16 +18,31 @@ export async function POST(request){
       },
     })
     
-    const mailOption = {
-      from: email,
-      to: `nathanmdj.dev@gmail.com, ${sender}`,
-      subject: subject,
-      html: `
-      <p>From: ${sender}</p>
-      <p>${message}</p>
-      `,
-    }
-    await transporter.sendMail(mailOption)
+    const mailOption = [
+      {
+        from: email,
+        to: `nathanmdj.dev@gmail.com`,
+        subject: subject,
+        html: `
+        <p>From: ${sender}</p>
+        <p>${message}</p>
+        `
+      },
+      {
+        from: email,
+        to: sender,
+        subject: 'Copy of your email',
+        html: `
+        <p>From: ${sender}</p>
+        <p>Subject: ${subject}</p>
+        <p>${message}</p>
+        `
+      },
+
+    ]
+    
+    mailOption.map(mail => transporter.sendMail(mail))
+  
     
     return NextResponse.json({message: "Email Send Successfully"}, {status: 200})
   } catch (error) {
